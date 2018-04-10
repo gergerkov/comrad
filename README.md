@@ -2,6 +2,7 @@
 
 # Usage:
 
+```java
 package com.cmd;
 
 import com.rad.fw.Command;
@@ -39,12 +40,14 @@ import java.net.URISyntaxException;
 public class App {
 
     public static void main(String[] args) throws IOException, URISyntaxException {
-        Comrad comrad = new Comrad();
-        System.out.println(comrad.getHelpMessage());
+        Comrad comrad = new Comrad();        
         String cmdArgs = "set this sum 1 2 print";
         comrad.invokeAll(cmdArgs.split(" "));
     }
 
 }
+```
+output: 
 
-# prints: this 3.0
+this 
+3.0
